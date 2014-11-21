@@ -18,9 +18,25 @@ int main(int argc, char** args)
 			printf("Inserisci i tre numeri separati da uno spazio ");
 			float a, b, c;
 			scanf("%f %f %f", &a, &b, &c);
-			float media = (a + b + c) / 3;
-			printf("La media tra %.3f, %.3f e %.3f vale %.3f\n\n", a, b, c, media);
+			
+			float minimo;
+
+			if (a < b)
+			{
+				if (a < c)
+					minimo = a;
+				else
+					minimo = c;
+			}
+			else if (b < c)
+				minimo = b;
+			else
+				minimo = c;
+
+			printf("Il minore dei tre elementi vale %.3f\n\n", minimo);
+
 			system("pause");
+			printf("\n\n");
 			continue;
 		}
 
