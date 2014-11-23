@@ -37,9 +37,6 @@ int main(int argc, char** args)
 
 			system("pause");
 			printf("\n\n");
-			continue;
 		}
-
-		continue;
 	}
 }
