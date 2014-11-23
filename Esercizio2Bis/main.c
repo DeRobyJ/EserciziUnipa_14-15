@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void nop()
-{
-
-}
-
 int main(int argc, char** args)
 {
 	int a, b;
@@ -13,7 +8,6 @@ int main(int argc, char** args)
 	{
 		printf("Inserisci il primo numero: ");
 		scanf("%d", &a);
-		nop();
 		printf("Inserisci il secondo numero: ");
 		scanf("%d", &b);
 		printf("\n");
